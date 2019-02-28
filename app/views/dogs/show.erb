@@ -1,0 +1,15 @@
+<h1>THIS DOG🐩</h1>
+
+<%= @dog.name %>
+<br>
+<%= @dog.breed %>
+<br>
+<%= @dog.age %>
+<h1>DUNDER MIFFLIN EMPLOYEES 🏄‍♂️</h1>
+<ul>
+  <% @employees.each do |employee| %>
+  <li>
+    <%= employee.first_name %>
+  </li>
+  <% end %>
+</ul>
