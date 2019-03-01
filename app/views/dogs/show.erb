@@ -1,0 +1,18 @@
+<h1><%= @dog.name %>'s info</h1>
+<ul>
+  <li>Breed: <%= @dog.breed %></li>
+  <li>Age: <%= @dog.age %></li>
+</ul>
+<h3><%= @dog.name %> owns following employees from Dunder Mifflin:</h3>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Alias</th>
+  </tr>
+  <% @employees.each do |emp| %>
+  <tr>
+    <td><%= emp.to_s %></td>
+    <td><%= emp.alias %></td>
+  </tr>
+  <% end %>
+</table>
