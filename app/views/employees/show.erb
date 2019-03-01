@@ -1,0 +1,10 @@
+<h1>Employee Page</h1>
+<h2><%= @employee.to_s %></h2>
+<h3>Owned by <%= @dog.name %></h3>
+<img src="<%= @employee.img_url %>" alt="<%= @employee.last_name %>">
+<br>
+<ul>
+  <li><%= @employee.title %></li>
+  <li>"<%= @employee.alias %>"</li>
+  <li><%= @employee.office %></li>
+</ul>
