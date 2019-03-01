@@ -6,9 +6,8 @@ class CreateEmployees < ActiveRecord::Migration[5.1]
       t.string :alias
       t.string :title
       t.string :office
+      t.references :dog, foreign_key: true
       t.string :img_url
-
-      t.timestamps
     end
   end
 end
