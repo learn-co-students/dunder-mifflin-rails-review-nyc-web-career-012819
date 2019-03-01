@@ -1,0 +1,18 @@
+<h1>Dog</h1>
+<%= label_tag :name %>
+<%= @dog.name %>
+<br>
+
+<%= label_tag :breed %>
+<%= @dog.breed %>
+<br>
+
+<%= label_tag :age %>
+<%= @dog.age %>
+
+<h2>Dunder Mifflin Employees:</h2>
+
+<% @employees.each do |employee| %>
+<%= employee.first_name %>
+<br>
+<% end %>
